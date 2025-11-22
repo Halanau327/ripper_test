@@ -1,5 +1,9 @@
 @import '../shared/styles/variables.css';
 
+:root {
+  --page-max-width: 1120px;
+}
+
 *,
 *::before,
 *::after {
@@ -46,4 +50,10 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
 }

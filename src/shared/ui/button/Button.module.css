@@ -1,13 +1,19 @@
 .button {
+  font-family: var(--font-paytone-one), sans-serif;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  text-transform: uppercase;
+}
+
+.button:hover {
+  transform: scale(1.05);
   transition:
     transform 0.2s,
     color 0.2s;
-  text-transform: uppercase;
 }
 
 .button.yellow {

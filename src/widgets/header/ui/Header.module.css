@@ -1,14 +1,13 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   font-family: var(--font-paytone-one), sans-serif;
   background-color: var(--bg-purple-10-20);
-  padding: 24px 160px;
 }
 
-.headerContainer {
+.headerInner {
   display: flex;
-  padding: 24px 160px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
 }
 
 .nav {
