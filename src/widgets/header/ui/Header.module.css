@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-paytone-one), sans-serif;
+  background-color: var(--bg-purple-10-20);
+  padding: 24px 160px;
+}
+
+.headerContainer {
+  display: flex;
+  padding: 24px 160px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  transition: transform 0.2s;
+}
+
+.nav a:hover {
+  transform: scale(1.05);
+}
+
+.navLink {
+  transition:
+    transform 0.2s,
+    color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--bg-button-yellow);
+}
+
+.capitalizeButton {
+  font-size: 14px;
+  width: 200px;
+  height: 44px;
+}

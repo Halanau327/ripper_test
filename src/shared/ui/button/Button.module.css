@@ -1,0 +1,24 @@
+.button {
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition:
+    transform 0.2s,
+    color 0.2s;
+  text-transform: uppercase;
+}
+
+.button.yellow {
+  background-color: var(--bg-button-yellow);
+  color: #000000;
+}
+
+.button.blue {
+  background-color: var(--bg-button-blue);
+}
+
+.button.capitalize {
+  text-transform: capitalize;
+}

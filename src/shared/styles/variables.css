@@ -1,4 +1,14 @@
 :root {
   --font-paytone-one: initial;
   --font-roboto: initial;
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Background-colors */
+  --bg-purple-10-20: #080d15;
+  --bg-purple-10-90: #233E60;
+  --bg-button-yellow: #fdff00;
+  --bg-button-blue: #0076ff;
 }
