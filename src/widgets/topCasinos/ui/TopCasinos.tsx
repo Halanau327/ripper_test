@@ -1,12 +1,12 @@
 import s from './TopCasinos.module.css'
 import { Container } from '@/shared/ui/container/Container'
 import { CardItem } from '@/shared/ui/card/Card'
-import { mainResponse } from '@/shared/types/offers'
+import { mainResponse } from '@/shared/types/types'
 import { Button } from '@/shared/ui/button'
 
 type Props = {
   country_name?: string
-  fullData: mainResponse | undefined
+  fullData?: mainResponse
 }
 
 export const TopCasinos = ({ country_name, fullData }: Props) => {

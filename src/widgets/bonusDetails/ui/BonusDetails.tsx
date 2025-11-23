@@ -2,7 +2,7 @@
 
 import s from './BonusDetails.module.css'
 import { Container } from '@/shared/ui/container'
-import { OfferItem } from '@/shared/types/offers'
+import { OfferItem } from '@/shared/types/types'
 import { useMemo, useState } from 'react'
 import { BonusTableRow } from '@/widgets/bonusDetails/ui/bonusTableRow'
 import { Button } from '@/shared/ui/button'

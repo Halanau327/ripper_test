@@ -7,7 +7,7 @@ export const DallasCowboyCasino = () => {
   return (
     <section className={s.dallasCasinoSection}>
       <Container>
-        <h1 className={s.title}>DALLAS COWBOYS CASINO</h1>
+        <h2 className={s.title}>DALLAS COWBOYS CASINO</h2>
         <div className={s.mainContainer}>
           <article className={s.leftSide}>
             <p className={s.introText}>

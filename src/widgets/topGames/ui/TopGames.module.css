@@ -1,0 +1,115 @@
+.topGamesSection {
+  background-color: var(--bg-purple-10-80);
+  padding: 140px 0;
+}
+
+.title {
+  font-size: 56px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.gamesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.gameCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gameImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gameCard:hover .gameImage {
+  transform: scale(1.05);
+}
+
+.gameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-purple-10-90);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.gameCard:hover .gameOverlay {
+  opacity: 0.9;
+}
+
+.gameName {
+  font-size: 28px;
+  color: var(--bg-button-yellow);
+  font-family: var(--font-roboto), sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.playButtonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.playButtonCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-button-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.playIcon {
+  font-size: 18px;
+  color: var(--bg-purple-10-90);
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  transform: translateX(1px);
+}
+
+.playButtonText {
+  font-size: 24px;
+  color: var(--bg-button-yellow);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.topGamesButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.topGamesButton {
+  font-size: 28px;
+  padding: 24px 48px;
+  border-radius: 6px;
+  line-height: 39px;
+  width: 340px;
+  height: 82px;
+}

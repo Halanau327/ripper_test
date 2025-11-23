@@ -1,5 +1,5 @@
 import s from './BonusAccordion.module.css'
-import { OfferItem } from '@/shared/types/offers'
+import { OfferItem } from '@/shared/types/types'
 
 type Props = {
   offer: OfferItem

@@ -42,3 +42,11 @@ export type mainResponse = {
   offers: OfferItem[]
   website: WebsiteItem
 }
+
+export type GameItem = {
+  id: number
+  name: string
+  image: string
+}
+
+export type GamesResponse = GameItem[]

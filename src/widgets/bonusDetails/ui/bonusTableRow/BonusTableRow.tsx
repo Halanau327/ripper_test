@@ -1,5 +1,5 @@
 import s from './BonusTableRow.module.css'
-import { OfferItem } from '@/shared/types/offers'
+import { OfferItem } from '@/shared/types/types'
 import Image from 'next/image'
 import { getOfferImageUrl } from '@/shared/lib'
 import { Button } from '@/shared/ui/button'
