@@ -2,7 +2,7 @@
 
 import s from './page.module.css'
 import { useEffect } from 'react'
-import { useParams, useRouter } from 'next/navigation'
+import { useParams } from 'next/navigation'
 import { Header } from '@/widgets/header/ui'
 import { Footer } from '@/widgets/footer/ui'
 import { Loader } from '@/shared/ui/loader'
@@ -23,8 +23,6 @@ export default function CasinoOfferPage() {
 
   const offerId = Number(params.offer_id)
 
-  const router = useRouter()
-
   useEffect(() => {
     const redirectToOffer = async () => {
       try {
@@ -35,7 +33,7 @@ export default function CasinoOfferPage() {
         const link = data.offers?.find(offer => offer.id === offerId)?.link
 
         if (link) {
-          router.push(link)
+          window.location.href = link
         }
       } catch (e) {
         console.error(e)
@@ -45,7 +43,7 @@ export default function CasinoOfferPage() {
     redirectToOffer().catch(err => {
       console.error('redirectToOffer failed', err)
     })
-  }, [offerId, router])
+  }, [offerId])
 
   return (
     <div className={s.page}>

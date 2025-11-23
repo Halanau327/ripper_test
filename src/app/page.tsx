@@ -27,22 +27,23 @@ export default async function Home() {
     <div className={s.page}>
       <Header offerId={offer?.id} />
 
-      {offer && <WelcomeScreen offerId={offer.id} welcome_bonus={offer.bonuses.welcome_bonus} />}
+      <main className={s.main}>
+        {offer && <WelcomeScreen offerId={offer.id} welcome_bonus={offer.bonuses.welcome_bonus} />}
 
-      <TopCasinos country_name={website?.country_name} fullData={offersData} />
-      <BonusDetails offers={offersData?.offers || []} />
-      <DallasCowboyCasino />
-      <TopGames games={gamesData} offerId={offer?.id} />
-      <CowboyCasinoAdvantages />
-      <LoginBlock />
-      <Zen8App offerId={offer?.id} />
-      <Faq />
-      <GamesAvailable />
-      <Support />
-      <Promotions />
+        <TopCasinos country_name={website?.country_name} fullData={offersData} />
+        <BonusDetails offers={offersData?.offers || []} />
+        <DallasCowboyCasino />
+        <TopGames games={gamesData} offerId={offer?.id} />
+        <CowboyCasinoAdvantages />
+        <LoginBlock />
+        <Zen8App offerId={offer?.id} />
+        <Faq />
+        <GamesAvailable />
+        <Support />
+        <Promotions />
+      </main>
+
       <Footer />
-
-      <main className={s.main}></main>
     </div>
   )
 }
