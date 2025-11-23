@@ -11,7 +11,7 @@ export const getGameImageUrl = (image: string) => `${IMAGE_BASE_URLS.games}${ima
 
 export const fetchWebsiteData = async (siteId: number): Promise<mainResponse | undefined> => {
   try {
-    const response = await fetch(getWebsiteUrl(siteId), { cache: 'no-store' })
+    const response = await fetch(getWebsiteUrl(siteId), { next: { revalidate: 60 } })
     if (!response.ok) return
     return await response.json()
   } catch (e) {
@@ -23,7 +23,7 @@ export const fetchGamesData = async (
   type: 'gambling' | 'betting'
 ): Promise<GamesResponse | undefined> => {
   try {
-    const response = await fetch(getGamesUrl(type), { cache: 'no-store' })
+    const response = await fetch(getGamesUrl(type), { next: { revalidate: 60 } })
     if (!response.ok) return
     return await response.json()
   } catch (e) {
