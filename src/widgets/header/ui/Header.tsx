@@ -15,12 +15,7 @@ export const Header = ({ offerId }: Props) => {
     <header className={s.header}>
       <Container className={s.headerInner}>
         <Link href='/'>
-          <Image
-            src='/images/ripper-casino-logo.svg'
-            alt='Ripper Casino'
-            width={97}
-            height={53}
-          />
+          <Image src='/images/ripper-casino-logo.svg' alt='Ripper Casino' width={97} height={53} />
         </Link>
 
         <nav className={s.nav}>

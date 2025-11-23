@@ -4,6 +4,7 @@ import s from './page.module.css'
 import { useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { Header } from '@/widgets/header/ui'
+import { Footer } from '@/widgets/footer/ui'
 import { Loader } from '@/shared/ui/loader'
 import { getWebsiteUrl } from '@/shared/lib/api'
 import { SITE_ID } from '@/shared/config/constants'
@@ -53,6 +54,8 @@ export default function CasinoOfferPage() {
       <div className={s.loaderWrapper}>
         <Loader centered size='lg' variant='dark' />
       </div>
+
+      <Footer />
     </div>
   )
 }

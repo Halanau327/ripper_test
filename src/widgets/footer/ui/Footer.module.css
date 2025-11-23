@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.topStrip {
+  width: 100%;
+  height: 140px;
+  background-color: var(--bg-purple-10-80);
+}
+
+.footerBottom {
+  background-color: var(--bg-purple-10-20);
+  padding: 24px 0;
+}
+
+.logoSection {
+  cursor: pointer;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.firstRow {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+
+.firstBlockRow {
+  display: flex;
+  align-items: center;
+}
+
+.iconsRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.rowImage {
+  filter: grayscale(100%);
+}

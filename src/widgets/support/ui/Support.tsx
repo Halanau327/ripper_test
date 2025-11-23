@@ -14,13 +14,16 @@ export const Support = () => {
               Support
             </h2>
             <p className={s.description}>
-              Cowboys Casino prides itself on providing exceptional customer support to ensure a pleasant gaming experience for all its visitors. Support is available 24/7 via multiple channels, including live chat, email, and telephone. The live chat feature is especially popular as it provides instant assistance for urgent inquiries.
+              Cowboys Casino prides itself on providing exceptional customer support to ensure a
+              pleasant gaming experience for all its visitors. Support is available 24/7 via
+              multiple channels, including live chat, email, and telephone. The live chat feature is
+              especially popular as it provides instant assistance for urgent inquiries.
             </p>
           </div>
           <div className={s.rightContent}>
             <Image
-              src="/images/support-form-image.png"
-              alt="Support Form"
+              src='/images/support-form-image.png'
+              alt='Support Form'
               width={475}
               height={294}
               className={s.formImage}
@@ -31,4 +34,3 @@ export const Support = () => {
     </section>
   )
 }
-

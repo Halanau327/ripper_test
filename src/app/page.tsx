@@ -14,6 +14,7 @@ import { Faq } from '@/widgets/faq/ui'
 import { GamesAvailable } from '@/widgets/gamesAvailable/ui'
 import { Support } from '@/widgets/support/ui'
 import { Promotions } from '@/widgets/promotions/ui'
+import { Footer } from '@/widgets/footer/ui'
 
 export default async function Home() {
   const offersData = await fetchWebsiteData(SITE_ID)
@@ -32,13 +33,14 @@ export default async function Home() {
       <BonusDetails offers={offersData?.offers || []} />
       <DallasCowboyCasino />
       <TopGames games={gamesData} offerId={offer?.id} />
-      <CowboyCasinoAdvantages/>
-      <LoginBlock/>
+      <CowboyCasinoAdvantages />
+      <LoginBlock />
       <Zen8App offerId={offer?.id} />
       <Faq />
       <GamesAvailable />
       <Support />
       <Promotions />
+      <Footer />
 
       <main className={s.main}></main>
     </div>

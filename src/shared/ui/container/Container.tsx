@@ -9,5 +9,3 @@ type Props = {
 export const Container = ({ className, children }: Props) => {
   return <div className={clsx('container', className)}>{children}</div>
 }
-
-

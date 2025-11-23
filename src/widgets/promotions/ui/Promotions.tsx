@@ -10,7 +10,7 @@ export const Promotions = () => {
           Cowboys Casino in Calgary is known for enriching the gaming experience of its visitors
           through an array of enticing bonuses and promotions. These offers are designed to reward
           regular patrons and attract new ones, making each visit potentially more rewarding.
-          Whether it's through additional play credits, cash prizes, or special event access,
+          Whether it&apos;s through additional play credits, cash prizes, or special event access,
           Cowboys Casino ensures that both new and returning customers have plenty of reasons to
           play.
         </p>
@@ -23,11 +23,11 @@ export const Promotions = () => {
                 offering them free play credits immediately after they register. Typically,
                 newcomers receive around C$20 in free play credits when they sign up for a casino
                 membership card. This initial bonus is crafted to give new visitors a taste of the
-                diverse gaming options available without any initial financial risk. It's an
+                diverse gaming options available without any initial financial risk. It&apos;s an
                 effective way to encourage guests to try out different games, potentially finding
                 their favorites which they might return to play again. This incentive not only
-                boosts the casino's visitor numbers but also enhances the overall guest experience
-                right from the start.
+                boosts the casino&apos;s visitor numbers but also enhances the overall guest
+                experience right from the start.
               </p>
             </div>
             <div className={s.gameSection}>
@@ -36,9 +36,9 @@ export const Promotions = () => {
                 Cowboys Casino enhances the excitement on the gaming floor with its progressive
                 jackpot bonuses, available on select slot machines and table games. These jackpots
                 start at a base amount, like C$10,000, and gradually increase with each play,
-                attracting more participants as the potential prize grows. It's not uncommon for
-                these jackpots to exceed C$100,000, creating a buzz on the casino floor and drawing
-                in crowds hoping to hit the big win.
+                attracting more participants as the potential prize grows. It&apos;s not uncommon
+                for these jackpots to exceed C$100,000, creating a buzz on the casino floor and
+                drawing in crowds hoping to hit the big win.
               </p>
             </div>
             <div className={s.gameSection}>
@@ -47,9 +47,10 @@ export const Promotions = () => {
                 Celebrating a birthday at Cowboys Casino is made special with the Birthday Bonus,
                 which often includes perks like free play credits or discounts on dining. Typically,
                 a birthday celebrant might receive C$25 in free play credits and a 20% discount at
-                one of the casino's dining establishments. This personalized touch not only makes
-                the birthday guest feel valued but also encourages celebratory gatherings at the
-                casino, potentially increasing foot traffic and patron spending on these occasions.
+                one of the casino&apos;s dining establishments. This personalized touch not only
+                makes the birthday guest feel valued but also encourages celebratory gatherings at
+                the casino, potentially increasing foot traffic and patron spending on these
+                occasions.
               </p>
             </div>
           </div>

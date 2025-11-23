@@ -2,7 +2,6 @@ import s from './DallasCowboyCasino.module.css'
 import { Container } from '@/shared/ui/container'
 import Image from 'next/image'
 
-
 export const DallasCowboyCasino = () => {
   return (
     <section className={s.dallasCasinoSection}>

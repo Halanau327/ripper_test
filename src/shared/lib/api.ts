@@ -19,7 +19,9 @@ export const fetchWebsiteData = async (siteId: number): Promise<mainResponse | u
   }
 }
 
-export const fetchGamesData = async (type: 'gambling' | 'betting'): Promise<GamesResponse | undefined> => {
+export const fetchGamesData = async (
+  type: 'gambling' | 'betting'
+): Promise<GamesResponse | undefined> => {
   try {
     const response = await fetch(getGamesUrl(type), { cache: 'no-store' })
     if (!response.ok) return

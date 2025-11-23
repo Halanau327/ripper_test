@@ -11,8 +11,7 @@
 
 .button:hover {
   transform: scale(1.05);
-  transition:
-    transform 0.6s
+  transition: transform 0.6s;
 }
 
 .button.yellow {
