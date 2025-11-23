@@ -4,7 +4,7 @@ import Image from 'next/image'
 import s from './Header.module.css'
 import { Button } from '@/shared/ui/button'
 import buttonStyles from '@/shared/ui/button/Button.module.css'
-import { Container } from '@/shared/ui/Container'
+import { Container } from '@/shared/ui/container/Container'
 
 type Props = {
   offerId?: number

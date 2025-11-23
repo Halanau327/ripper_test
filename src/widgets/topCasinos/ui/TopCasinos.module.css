@@ -1,0 +1,33 @@
+.topCasinosSection {
+  background-color: var(--bg-purple-10-80);
+}
+
+.topCasinosTitle {
+  font-size: 56px;
+  line-height: 78px;
+  text-transform: uppercase;
+}
+
+.topCasinosGridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.allCasinoButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.allCasinoButton {
+  font-size: 28px;
+  padding: 24px 48px;
+  border-radius: 6px;
+  line-height: 39px;
+  width: 340px;
+  height: 82px;
+}
+
+

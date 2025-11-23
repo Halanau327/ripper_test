@@ -6,7 +6,7 @@ export type BonusInfo = {
   welcome_bonus: string
 }
 
-export type Offer = {
+export type OfferItem = {
   active: number
   bonus_code: string | null
   bonuses: BonusInfo
@@ -28,7 +28,7 @@ export type Offer = {
   website_id: number | null
 }
 
-export type Website = {
+export type WebsiteItem = {
   android_app: string | null
   country_code: string
   country_name: string
@@ -38,7 +38,7 @@ export type Website = {
   type: string
 }
 
-export type OffersResponse = {
-  offers: Offer[]
-  website: Website
+export type mainResponse = {
+  offers: OfferItem[]
+  website: WebsiteItem
 }
