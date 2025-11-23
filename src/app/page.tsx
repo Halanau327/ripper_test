@@ -13,7 +13,7 @@ import { Zen8App } from '@/widgets/zen8App/ui'
 import { Faq } from '@/widgets/faq/ui'
 import { GamesAvailable } from '@/widgets/gamesAvailable/ui'
 import { Support } from '@/widgets/support/ui'
-
+import { Promotions } from '@/widgets/promotions/ui'
 
 export default async function Home() {
   const offersData = await fetchWebsiteData(SITE_ID)
@@ -38,6 +38,7 @@ export default async function Home() {
       <Faq />
       <GamesAvailable />
       <Support />
+      <Promotions />
 
       <main className={s.main}></main>
     </div>

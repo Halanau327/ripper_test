@@ -1,0 +1,49 @@
+.promotionsSection {
+  background-color: var(--bg-purple-10-20);
+  padding: 64px 0;
+}
+
+.title {
+  font-size: 56px;
+  line-height: 78px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.introText {
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 48px;
+}
+
+.columnsContainer {
+  display: flex;
+  gap: 64px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.gameSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.sectionText {
+  font-size: 20px;
+  line-height: 40px;
+  width: 527px;
+}
+
+
