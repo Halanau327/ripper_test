@@ -12,6 +12,7 @@ import { LoginBlock } from '@/widgets/loginBlock/ui'
 import { Zen8App } from '@/widgets/zen8App/ui'
 import { Faq } from '@/widgets/faq/ui'
 import { GamesAvailable } from '@/widgets/gamesAvailable/ui'
+import { Support } from '@/widgets/support/ui'
 
 
 export default async function Home() {
@@ -36,6 +37,7 @@ export default async function Home() {
       <Zen8App offerId={offer?.id} />
       <Faq />
       <GamesAvailable />
+      <Support />
 
       <main className={s.main}></main>
     </div>
