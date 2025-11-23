@@ -64,7 +64,7 @@ const faqData: FaqItem[] = [
 ]
 
 export const Faq = () => {
-  const [expandedIds, setExpandedIds] = useState<Set<number>>(new Set([0]))
+  const [expandedIds, setExpandedIds] = useState<Set<number>>(new Set())
 
   const handleToggle = (id: number) => {
     setExpandedIds(prev => {

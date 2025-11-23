@@ -1,3 +1,5 @@
+'use client'
+
 import s from './TopGames.module.css'
 import { Container } from '@/shared/ui/container'
 import { GamesResponse } from '@/shared/types/types'
@@ -5,6 +7,8 @@ import Image from 'next/image'
 import { getGameImageUrl } from '@/shared/lib/api'
 import { Button } from '@/shared/ui/button'
 import Link from 'next/link'
+import { useMemo } from 'react'
+import { shuffleArray } from '@/shared/lib'
 
 type Props = {
   games?: GamesResponse
@@ -12,12 +16,18 @@ type Props = {
 }
 
 export const TopGames = ({ games, offerId }: Props) => {
+  const displayedGames = useMemo(() => {
+    if (!games || games.length === 0) return []
+    const shuffled = shuffleArray(games)
+    return shuffled.slice(0, 12)
+  }, [games])
+
   return (
     <section className={s.topGamesSection}>
       <Container>
         <h2 className={s.title}>TOP GAMES</h2>
         <div className={s.gamesContainer}>
-          {games?.map(game => (
+          {displayedGames.map(game => (
             <Link
               key={game.id}
               href={offerId ? `/casino/${offerId}` : ''}
