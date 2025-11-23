@@ -43,7 +43,7 @@
 .refreshButtonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 24px;
 }
 
 .refreshButton {
@@ -52,4 +52,5 @@
   height: 82px;
   padding: 24px 48px;
   border-radius: 6px;
+  margin-bottom: 140px;
 }

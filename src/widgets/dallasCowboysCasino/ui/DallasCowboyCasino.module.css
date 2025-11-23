@@ -1,0 +1,55 @@
+.dallasCasinoSection {
+  background-color: var(--bg-purple-10-20);
+  padding-bottom: 64px;
+}
+
+.title {
+  font-size: 56px;
+  padding: 64px 0 48px 0;
+  text-transform: uppercase;
+}
+
+.mainContainer {
+  display: flex;
+  gap: 47px;
+  align-items: flex-start;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.introText {
+  width: 528px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.benefitsList {
+  list-style-type: disc;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 0;
+}
+
+.benefitItem {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.descriptionText {
+  width: 528px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
