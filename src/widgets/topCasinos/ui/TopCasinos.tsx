@@ -38,9 +38,9 @@ export const TopCasinos = ({ country_name, fullData }: Props) => {
           ))}
         </div>
         <div className={s.allCasinoButtonContainer}>
-          <Button 
-            className={`${s.allCasinoButton} ${showAll ? s.allCasinoButtonHidden : ''}`} 
-            variant='yellow' 
+          <Button
+            className={`${s.allCasinoButton} ${showAll ? s.allCasinoButtonHidden : ''}`}
+            variant='yellow'
             onClick={() => setShowAll(true)}
           >
             All Casino
