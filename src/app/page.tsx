@@ -5,6 +5,7 @@ import { getWebsiteUrl } from '@/shared/lib'
 import { SITE_ID } from '@/shared/config'
 import { Header } from '@/widgets/header/ui'
 import { WelcomeScreen } from '@/widgets/welcomeScreen/ui'
+import { BonusDetails } from '@/widgets/bonusDetails/ui'
 
 export default async function Home() {
   let offer: OfferItem | undefined
@@ -33,6 +34,7 @@ export default async function Home() {
       {offer && <WelcomeScreen offerId={offer.id} welcome_bonus={offer.bonuses.welcome_bonus} />}
 
       <TopCasinos country_name={website?.country_name} fullData={fullData} />
+      <BonusDetails offers={fullData?.offers || []}/>
 
       <main className={s.main}></main>
     </div>

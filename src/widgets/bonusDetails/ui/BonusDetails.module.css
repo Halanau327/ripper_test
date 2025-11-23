@@ -1,0 +1,55 @@
+.bonusDetailsSection {
+  background: var(--bg-purple-10-80);
+}
+
+.title {
+  font-size: 56px;
+  margin-bottom: 48px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 24px;
+}
+
+.tableHeader {
+  background-color: var(--bg-purple-10-20);
+}
+
+.headerCell {
+  font-size: 24px;
+  padding: 30px 16px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 28px;
+  border-right: 1px solid var(--color-gray);
+}
+
+.headerCell:last-child {
+  border-right: none;
+}
+
+.tableHeader .headerCell:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tableHeader .headerCell:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.refreshButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.refreshButton {
+  font-size: 28px;
+  width: 340px;
+  height: 82px;
+  padding: 24px 48px;
+  border-radius: 6px;
+}

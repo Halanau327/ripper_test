@@ -1,0 +1,53 @@
+.tableRow {
+  background-color: var(--bg-purple-10-90);
+  transition: background-color 0.2s;
+  font-size: 20px;
+}
+
+.tableCell {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.casinoCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.casinoLogo {
+  flex-shrink: 0;
+}
+
+.casinoName {
+  font-weight: 500;
+}
+
+.infoButton {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.infoIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.getBonusButton {
+  font-size: 20px;
+  width: 218px;
+  height: 56px;
+  padding: 14px 32px;
+  text-transform: uppercase;
+}
+
+.tableRow .tableCell:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tableRow .tableCell:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+

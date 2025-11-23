@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import s from './Button.module.css'
 
 type Props = {
-  variant?: 'yellow' | 'blue'
+  variant?: 'yellow' | 'blue' | 'none'
   href?: string
   target?: '_blank' | '_self'
   children: ReactNode

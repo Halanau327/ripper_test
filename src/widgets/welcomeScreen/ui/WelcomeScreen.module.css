@@ -2,15 +2,13 @@
   display: flex;
   flex-direction: column;
   background-color: var(--bg-purple-10-90);
-  /*padding: 21px 0;*/
 }
 
-/* основной верхний баннер */
 .welcomeScreenContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding: 21px 0;
 }
 
 .leftContainer {
@@ -61,4 +59,5 @@
   padding: 33px 60px;
   border-radius: 8px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 70px;
 }

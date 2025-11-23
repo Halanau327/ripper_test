@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  border: none;
   text-transform: uppercase;
 }
 
@@ -18,11 +18,15 @@
 
 .button.yellow {
   background-color: var(--bg-button-yellow);
-  color: #000000;
+  color: var(--color-black);
 }
 
 .button.blue {
   background-color: var(--bg-button-blue);
+}
+
+.button.none {
+  background: none;
 }
 
 .button.capitalize {
