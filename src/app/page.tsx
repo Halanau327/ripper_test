@@ -11,6 +11,7 @@ import { CowboyCasinoAdvantages } from '@/widgets/cowboyCasinoAdvantages/ui'
 import { LoginBlock } from '@/widgets/loginBlock/ui'
 import { Zen8App } from '@/widgets/zen8App/ui'
 import { Faq } from '@/widgets/faq/ui'
+import { GamesAvailable } from '@/widgets/gamesAvailable/ui'
 
 
 export default async function Home() {
@@ -34,6 +35,7 @@ export default async function Home() {
       <LoginBlock/>
       <Zen8App offerId={offer?.id} />
       <Faq />
+      <GamesAvailable />
 
       <main className={s.main}></main>
     </div>
