@@ -4,3 +4,4 @@ export const IMAGE_BASE_URLS = {
   offers: 'https://api.adkey-seo.com/storage/images/offers/',
   games: 'https://api.adkey-seo.com/storage/images/games/',
 }
+export const INITIAL_COUNT = 8

@@ -30,3 +30,7 @@
   height: 82px;
   margin-bottom: 140px;
 }
+
+.allCasinoButtonHidden {
+  display: none;
+}

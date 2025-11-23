@@ -6,7 +6,7 @@
 .contentContainer {
   display: flex;
   gap: 47px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .title {
