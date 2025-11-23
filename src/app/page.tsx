@@ -7,6 +7,7 @@ import { WelcomeScreen } from '@/widgets/welcomeScreen/ui'
 import { BonusDetails } from '@/widgets/bonusDetails/ui'
 import { DallasCowboyCasino } from '@/widgets/dallasCowboysCasino/ui'
 import { TopGames } from '@/widgets/topGames/ui'
+import { CowboyCasinoAdvantages } from '@/widgets/cowboyCasinoAdvantages/ui'
 
 export default async function Home() {
   const offersData = await fetchWebsiteData(SITE_ID)
@@ -25,6 +26,7 @@ export default async function Home() {
       <BonusDetails offers={offersData?.offers || []} />
       <DallasCowboyCasino />
       <TopGames games={gamesData} offerId={offer?.id} />
+      <CowboyCasinoAdvantages/>
 
       <main className={s.main}></main>
     </div>
