@@ -1,14 +1,17 @@
 import s from './page.module.css'
-import { TopCasinos } from '@/widgets/topCasinos/ui'
 import { fetchGamesData, fetchWebsiteData } from '@/shared/lib'
 import { SITE_ID } from '@/shared/config'
 import { Header } from '@/widgets/header/ui'
 import { WelcomeScreen } from '@/widgets/welcomeScreen/ui'
+import { TopCasinos } from '@/widgets/topCasinos/ui'
 import { BonusDetails } from '@/widgets/bonusDetails/ui'
 import { DallasCowboyCasino } from '@/widgets/dallasCowboysCasino/ui'
 import { TopGames } from '@/widgets/topGames/ui'
 import { CowboyCasinoAdvantages } from '@/widgets/cowboyCasinoAdvantages/ui'
-import { LoginBlock } from '@/widgets/loginBlock/ui/LoginBlock'
+import { LoginBlock } from '@/widgets/loginBlock/ui'
+import { Zen8App } from '@/widgets/zen8App/ui'
+import { Faq } from '@/widgets/faq/ui'
+
 
 export default async function Home() {
   const offersData = await fetchWebsiteData(SITE_ID)
@@ -29,6 +32,8 @@ export default async function Home() {
       <TopGames games={gamesData} offerId={offer?.id} />
       <CowboyCasinoAdvantages/>
       <LoginBlock/>
+      <Zen8App offerId={offer?.id} />
+      <Faq />
 
       <main className={s.main}></main>
     </div>
