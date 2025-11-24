@@ -39,16 +39,22 @@ export default function CasinoOfferPage() {
         console.log('Looking for offer with id:', offerId)
         console.log('Available offers:', data.offers?.map(o => ({ id: o.id, link: o.link })))
         
-        const offer = data.offers?.find(offer => offer.id === offerId)
+        let offer = data.offers?.find(offer => offer.id === offerId)
         console.log('Found offer:', offer)
 
+        
+        if (!offer && data.offers && data.offers.length > 0) {
+          console.warn(`Offer with id ${offerId} not found, using first available offer`)
+          offer = data.offers[0]
+        }
+
         if (!offer) {
-          console.error(`Offer with id ${offerId} not found`)
+          console.error(`No offers available`)
           return
         }
 
         if (!offer.link) {
-          console.error(`Offer ${offerId} has no link`)
+          console.error(`Offer ${offer.id} has no link`)
           return
         }
 
