@@ -26,30 +26,23 @@ export default function CasinoOfferPage() {
   useEffect(() => {
     const redirectToOffer = async () => {
       try {
-        console.log('Fetching website data for offerId:', offerId)
         const res = await fetch(getWebsiteUrl(SITE_ID), { cache: 'no-store' })
-        
+
         if (!res.ok) {
           console.error('API request failed:', res.status, res.statusText)
           return
         }
 
         const data = (await res.json()) as WebsiteResponse
-        console.log('API response:', data)
-        console.log('Looking for offer with id:', offerId)
-        console.log('Available offers:', data.offers?.map(o => ({ id: o.id, link: o.link })))
-        
-        let offer = data.offers?.find(offer => offer.id === offerId)
-        console.log('Found offer:', offer)
 
-        
+        let offer = data.offers?.find(offer => offer.id === offerId)
+
         if (!offer && data.offers && data.offers.length > 0) {
-          console.warn(`Offer with id ${offerId} not found, using first available offer`)
           offer = data.offers[0]
         }
 
         if (!offer) {
-          console.error(`No offers available`)
+          console.error('No offers available')
           return
         }
 
@@ -58,7 +51,6 @@ export default function CasinoOfferPage() {
           return
         }
 
-        console.log('Redirecting to:', offer.link)
         window.location.href = offer.link
       } catch (e) {
         console.error('Error in redirectToOffer:', e)
