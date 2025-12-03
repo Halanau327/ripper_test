@@ -15,13 +15,6 @@
   gap: 12px;
 }
 
-.casinoLogo {
-  flex-shrink: 0;
-}
-
-.casinoName {
-  font-weight: 500;
-}
 
 .infoButton {
   cursor: pointer;

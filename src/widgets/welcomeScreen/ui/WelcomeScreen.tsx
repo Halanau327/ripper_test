@@ -4,7 +4,7 @@ import { Container } from '@/shared/ui/container/Container'
 
 type Props = {
   offerId?: number
-  welcome_bonus: string
+  welcome_bonus?: string
 }
 
 export const WelcomeScreen = ({ offerId, welcome_bonus }: Props) => {
