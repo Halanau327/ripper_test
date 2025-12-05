@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .topStrip {
@@ -16,6 +17,8 @@
 
 .logoSection {
   cursor: pointer;
+  position: absolute;
+  left: 0;
 }
 
 .footerContent {
@@ -27,12 +30,16 @@
 .firstRow {
   display: flex;
   align-items: center;
-  gap: 47px;
+  justify-content: center;
+  position: relative;
 }
 
 .firstBlockRow {
   display: flex;
   align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .iconsRow {
@@ -42,6 +49,39 @@
   width: 100%;
 }
 
-.rowImage {
+.copyrightText {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--color-white);
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.copyrightText:hover {
+  opacity: 1;
+}
+
+.ageRestriction {
+  font-size: 32px;
+  padding-right: 16px;
+  vertical-align: middle;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.iconImage {
   filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  cursor: pointer;
+}
+
+.iconImage:hover {
+  filter: grayscale(0%);
 }

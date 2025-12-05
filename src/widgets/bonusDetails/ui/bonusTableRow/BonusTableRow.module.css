@@ -1,20 +1,44 @@
+.tableRowWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .tableRow {
+  display: grid;
+  grid-template-columns: 206px 240px 140px 140px 140px 254px;
   background-color: var(--bg-purple-10-90);
+  border-radius: 8px;
   transition: background-color 0.2s;
   font-size: 20px;
+  height: 88px;
+  column-gap: 0;
 }
 
 .tableCell {
-  padding: 24px 16px;
+  padding: 0;
   text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+}
+
+.tableCell:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 16px;
+  bottom: 16px;
+  width: 1px;
+  background-color: var(--border-color);
 }
 
 .casinoCell {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 12px;
 }
-
 
 .infoButton {
   cursor: pointer;
@@ -30,16 +54,48 @@
   font-size: 20px;
   width: 218px;
   height: 56px;
-  padding: 14px 32px;
+  padding: 16px 20px;
   text-transform: uppercase;
 }
 
-.tableRow .tableCell:first-child {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.tableCell.empty .rate::before,
+.tableCell.empty .freeSpins::before {
+  content: '—';
 }
 
-.tableRow .tableCell:last-child {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+.accordionRow {
+  display: grid;
+  grid-template-columns: 206px 1fr;
+  border-radius: 8px;
+  column-gap: 0;
+}
+
+@media (max-width: 576px) {
+  .tableRow {
+    grid-template-columns: 160px 100px 100px 88px;
+    height: 58px;
+  }
+
+  .tableCell {
+    font-size: 18px;
+    height: 58px;
+  }
+
+  .tableCell:not(:last-child)::after {
+    top: 8px;
+    bottom: 8px;
+  }
+
+  .bonusColumn,
+  .getColumn {
+    display: none;
+  }
+
+  .accordionRow {
+    grid-template-columns: 160px 1fr;
+  }
+
+  .accordionCell:first-child {
+    width: 160px;
+  }
 }

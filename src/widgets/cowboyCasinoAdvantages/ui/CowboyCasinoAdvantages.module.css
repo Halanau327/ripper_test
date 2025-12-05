@@ -1,6 +1,7 @@
 .advantagesSection {
   background-color: var(--bg-purple-10-20);
   padding: 64px 0;
+  width: 100%;
 }
 
 .title {
@@ -34,5 +35,4 @@
   list-style-position: inside;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }

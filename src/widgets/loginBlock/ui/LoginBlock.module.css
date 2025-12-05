@@ -1,19 +1,24 @@
 .loginBlockSection {
   background-color: var(--bg-purple-10-80);
   padding: 140px 0;
+  width: 100%;
+}
+
+.topLoginContainer {
+  margin-bottom: 48px;
 }
 
 .title {
   font-size: 40px;
   line-height: 56px;
   text-transform: uppercase;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .introText {
   font-size: 20px;
   line-height: 40px;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .columnsContainer {
@@ -25,7 +30,7 @@
   font-size: 40px;
   line-height: 56px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .columnText {

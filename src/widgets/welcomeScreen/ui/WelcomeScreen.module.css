@@ -2,13 +2,14 @@
   display: flex;
   flex-direction: column;
   background-color: var(--bg-purple-10-90);
+  margin-top: 96px;
 }
 
 .welcomeScreenContainer {
   display: flex;
   align-items: center;
-  justify-content: space-a;
   padding: 21px 0;
+  gap: 66px;
 }
 
 .leftContainer {
@@ -18,18 +19,18 @@
 .rightContainer {
   width: 554px;
   height: 498px;
-  background: url('/images/welcome-screen-image.png') center/cover no-repeat;
+  background: url('/images/welcome-screen-image.webp') center/cover no-repeat;
+  flex-shrink: 0;
 }
 
 .welcomeBonus {
   font-size: 32px;
-  line-height: 45px;
   text-transform: uppercase;
 }
 
 .claimButton {
   font-size: 28px;
-  margin-top: 28px;
+  margin-top: 46px;
   padding: 24px 48px;
   border-radius: 6px;
   line-height: 39px;
@@ -41,24 +42,101 @@
   display: block;
 }
 
-.bottomBanner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 64px 0;
-  background: var(--bg-purple-10-80);
+@media (max-width: 1200px) {
+  .welcomeScreenContainer {
+    padding: 21px 40px;
+  }
+
+  .rightContainer {
+    width: 440px;
+    height: 398px;
+  }
 }
 
-.mainTitle {
-  font-size: 28px;
-  text-align: center;
-  text-transform: uppercase;
+@media (max-width: 880px) {
+  .rightContainer {
+    width: 352px;
+    height: 318px;
+  }
 }
 
-.mainTitleContainer {
-  background-color: var(--bg-purple-10-90);
-  padding: 33px 60px;
-  border-radius: 8px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  margin-bottom: 70px;
+@media (max-width: 768px) {
+  .welcomeBonus {
+    font-size: 26px;
+  }
+
+  .claimButton {
+    font-size: 26px;
+    text-wrap: nowrap;
+    width: 272px;
+    height: 66px;
+  }
+
+  .rightContainer {
+    width: 316px;
+    height: 286px;
+  }
+}
+
+@media (max-width: 680px) {
+  .welcomeScreenContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 54px 20px;
+    gap: 22px;
+  }
+
+
+  .leftContainer {
+    text-align: center;
+  }
+
+  .rightContainer {
+    width: 576px;
+    height: 317px;
+    background-size: contain;
+  }
+
+  .welcomeBonus {
+    font-size: 24px;
+    padding: 0 14px;
+  }
+
+  .claimButton {
+    font-size: 24px;
+    width: 280px;
+    height: 77px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  .welcomeBonus {
+    padding: 0 24px;
+  }
+
+  .rightContainer {
+    width: 460px;
+    height: 254px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcomeBonus {
+    font-size: 20px;
+    padding: 0 114px;
+  }
+
+  .rightContainer {
+    width: 368px;
+    height: 204px;
+    background-size: contain;
+  }
+
+  .claimButton {
+    font-size: 22px;
+    width: 250px;
+    height: 69px;
+  }
 }

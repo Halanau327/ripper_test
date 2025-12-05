@@ -27,14 +27,14 @@ const Values = ({ offer }: Props) => {
 
   return (
     <div className={s.valuesContainer}>
-      <div className={s.detailRow}>
-        <span className={s.detailValue}>{amount || '-'}</span>
+      <div className={`${s.detailRow} ${!amount ? s.empty : ''}`}>
+        <span className={s.detailValue}>{amount || ''}</span>
       </div>
-      <div className={s.detailRow}>
-        <span className={s.detailValue}>{wager ? `x${wager}` : '-'}</span>
+      <div className={`${s.detailRow} ${!wager ? s.empty : ''}`}>
+        <span className={s.detailValue}>{wager ? `x${wager}` : ''}</span>
       </div>
-      <div className={s.detailRow}>
-        <span className={s.detailValue}>{bonus_code || '-'}</span>
+      <div className={`${s.detailRow} ${!bonus_code ? s.empty : ''}`}>
+        <span className={s.detailValue}>{bonus_code || ''}</span>
       </div>
     </div>
   )

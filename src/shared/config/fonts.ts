@@ -8,7 +8,6 @@ export const paytoneOne = Paytone_One({
 
 export const roboto = Roboto({
   variable: '--font-roboto',
-  weight: '500',
   subsets: ['latin'],
 })
 

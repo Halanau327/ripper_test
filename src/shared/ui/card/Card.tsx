@@ -16,7 +16,13 @@ export const CardItem = ({ logo, bonus, name, offerType, id }: CardProps) => {
 
   return (
     <div className={s.cardItemContainer}>
-      <Image src={getOfferImageUrl(logo)} alt={altText} width={190} height={76} />
+      <Image
+        src={getOfferImageUrl(logo)}
+        alt={altText}
+        width={190}
+        height={76}
+        className={s.cardImage}
+      />
       <h3 className={s.cardItemName}>{name}</h3>
       <span className={s.cardItemLabel}>Welcome Bonus</span>
       <p className={s.cardItemBonus}>{bonus}</p>

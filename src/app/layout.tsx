@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='ru' className={fontVariables}>
-      <body>{children}</body>
+    <html lang='en' className={fontVariables}>
+      <body id='top'>{children}</body>
     </html>
   )
 }

@@ -1,3 +1,5 @@
+'use client'
+
 import s from './BonusTableRow.module.css'
 import { OfferItem } from '@/shared/types/types'
 import Image from 'next/image'
@@ -13,12 +15,12 @@ type Props = {
 
 export const BonusTableRow = ({ offer, isExpanded, onToggle }: Props) => {
   const { id, name, logo, bonuses, type } = offer
-  const { rate, free_spins, welcome_bonus } = bonuses
+  const { rate, free_spins } = bonuses
 
   return (
-    <>
-      <tr className={s.tableRow}>
-        <td className={s.tableCell}>
+    <div className={s.tableRowWrapper}>
+      <div className={s.tableRow}>
+        <div className={`${s.tableCell} ${s.casinoColumn}`}>
           <div className={s.casinoCell}>
             <Image
               src={getOfferImageUrl(logo)}
@@ -28,17 +30,17 @@ export const BonusTableRow = ({ offer, isExpanded, onToggle }: Props) => {
               className={s.casinoLogo}
             />
           </div>
-        </td>
-        <td className={s.tableCell}>
-          <span className={s.bonusType}>{welcome_bonus || 'Welcome Bonus'}</span>
-        </td>
-        <td className={s.tableCell}>
-          <span className={s.rate}>{rate}</span>
-        </td>
-        <td className={s.tableCell}>
-          <span className={s.freeSpins}>{free_spins}</span>
-        </td>
-        <td className={s.tableCell}>
+        </div>
+        <div className={`${s.tableCell} ${s.bonusColumn}`}>
+          <span className={s.bonusType}>{'Welcome Bonus'}</span>
+        </div>
+        <div className={`${s.tableCell} ${s.rateColumn} ${!rate ? s.empty : ''}`}>
+          <span className={s.rate}>{rate || ''}</span>
+        </div>
+        <div className={`${s.tableCell} ${s.freeSpinsColumn} ${!free_spins ? s.empty : ''}`}>
+          <span className={s.freeSpins}>{free_spins || ''}</span>
+        </div>
+        <div className={`${s.tableCell} ${s.moreInfoColumn}`}>
           <Button
             className={s.infoButton}
             onClick={onToggle}
@@ -54,8 +56,8 @@ export const BonusTableRow = ({ offer, isExpanded, onToggle }: Props) => {
               className={s.infoIcon}
             />
           </Button>
-        </td>
-        <td className={s.tableCell}>
+        </div>
+        <div className={`${s.tableCell} ${s.getColumn}`}>
           <Button
             variant='blue'
             href={`/casino/${id}`}
@@ -64,18 +66,18 @@ export const BonusTableRow = ({ offer, isExpanded, onToggle }: Props) => {
           >
             GET THE BONUS
           </Button>
-        </td>
-      </tr>
+        </div>
+      </div>
       {isExpanded && (
-        <tr className={s.accordionRow}>
-          <td className={s.accordionCell}>
+        <div className={s.accordionRow}>
+          <div className={s.accordionCell}>
             <BonusAccordion.Labels />
-          </td>
-          <td colSpan={5} className={s.accordionCell}>
+          </div>
+          <div className={s.accordionCell}>
             <BonusAccordion.Values offer={offer} />
-          </td>
-        </tr>
+          </div>
+        </div>
       )}
-    </>
+    </div>
   )
 }

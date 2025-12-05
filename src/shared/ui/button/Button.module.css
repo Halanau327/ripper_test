@@ -1,5 +1,6 @@
 .button {
-  font-family: var(--font-paytone-one), sans-serif;
+  font-family: var(--font-paytone-one, 'Paytone One'), sans-serif;
+  font-weight: 400;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;

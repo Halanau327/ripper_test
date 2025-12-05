@@ -1,6 +1,7 @@
 .supportSection {
   background-color: var(--bg-purple-10-80);
   padding: 140px 0;
+  width: 100%;
 }
 
 .contentContainer {

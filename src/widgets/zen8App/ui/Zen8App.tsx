@@ -32,8 +32,9 @@ export const Zen8App = ({ offerId }: Props) => {
                 <Image
                   src='/images/google-play-logo.svg'
                   alt='Get it on Google Play'
-                  width={180}
-                  height={60}
+                  width={175}
+                  height={52}
+                  loading="lazy"
                 />
               </Button>
               <Button
@@ -45,8 +46,9 @@ export const Zen8App = ({ offerId }: Props) => {
                 <Image
                   src='/images/apple-store-logo.svg'
                   alt='Download on the App Store'
-                  width={180}
-                  height={60}
+                  width={156}
+                  height={52}
+                  loading="lazy"
                 />
               </Button>
             </div>
@@ -58,6 +60,7 @@ export const Zen8App = ({ offerId }: Props) => {
               width={526}
               height={370}
               className={s.mobileImage}
+              loading="lazy"
             />
           </div>
         </div>

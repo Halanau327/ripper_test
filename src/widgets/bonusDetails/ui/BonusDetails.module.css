@@ -1,49 +1,58 @@
 .bonusDetailsSection {
   background: var(--bg-purple-10-80);
+  width: 100%;
 }
 
 .title {
   font-size: 56px;
-  /*margin-bottom: 48px;*/
+  margin-bottom: 48px;
 }
 
-.table {
+.tableContainer {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 24px;
 }
 
 .tableHeader {
+  display: grid;
+  grid-template-columns: 206px 240px 140px 140px 140px 254px;
   background-color: var(--bg-purple-10-20);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  height: 88px;
+  column-gap: 0;
 }
 
 .headerCell {
+  position: relative;
   font-size: 24px;
-  padding: 30px 16px;
+  padding: 0 12px;
   text-align: center;
-  font-weight: normal;
-  line-height: 28px;
-  border-right: 1px solid var(--color-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
 }
 
-.headerCell:last-child {
-  border-right: none;
+.headerCell:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: var(--border-color);
 }
 
-.tableHeader .headerCell:first-child {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
-.tableHeader .headerCell:last-child {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+.tableBody {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .refreshButtonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 48px;
 }
 
 .refreshButton {
@@ -53,4 +62,26 @@
   padding: 24px 48px;
   border-radius: 6px;
   margin-bottom: 140px;
+}
+
+@media (max-width: 576px) {
+  .tableHeader {
+    grid-template-columns: 160px 100px 100px 88px;
+    height: 58px;
+  }
+
+  .headerCell {
+    font-size: 20px;
+    height: 58px;
+  }
+
+  .headerCell:not(:last-child)::after {
+    top: 8px;
+    bottom: 8px;
+  }
+
+  .bonusColumn,
+  .getColumn {
+    display: none;
+  }
 }

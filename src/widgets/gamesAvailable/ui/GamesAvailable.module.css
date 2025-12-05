@@ -1,6 +1,7 @@
 .gamesSection {
   background-color: var(--bg-purple-10-20);
   padding: 64px 0;
+  width: 100%;
 }
 
 .title {
@@ -18,7 +19,7 @@
 
 .columnsContainer {
   display: flex;
-  gap: 47px;
+  gap: 64px;
 }
 
 .column {

@@ -42,28 +42,32 @@ export const BonusDetails = ({ offers }: Props) => {
         <h2 className={s.title}>BONUS DETAILS</h2>
 
         <div className={s.tableContainer}>
-          <table className={s.table}>
-            <thead>
-              <tr className={s.tableHeader}>
-                <th className={s.headerCell}>Casino</th>
-                <th className={s.headerCell}>Bonuses</th>
-                <th className={s.headerCell}>Rate</th>
-                <th className={s.headerCell}>Free Spins</th>
-                <th className={s.headerCell}>More info</th>
-                <th className={s.headerCell}>Get</th>
-              </tr>
-            </thead>
-            <tbody>
-              {displayedOffers.map(offer => (
-                <BonusTableRow
-                  key={offer.id}
-                  offer={offer}
-                  isExpanded={expandedIds.has(offer.id)}
-                  onToggle={() => handleToggleAccordion(offer.id)}
-                />
-              ))}
-            </tbody>
-          </table>
+          <div className={s.tableHeader}>
+            <div className={`${s.headerCell} ${s.casinoColumn}`}>Casino</div>
+            <div className={`${s.headerCell} ${s.bonusColumn}`}>Bonuses</div>
+            <div className={`${s.headerCell} ${s.rateColumn}`}>Rate</div>
+            <div className={`${s.headerCell} ${s.freeSpinsColumn}`}>
+              Free
+              <br />
+              Spins
+            </div>
+            <div className={`${s.headerCell} ${s.moreInfoColumn}`}>
+              More
+              <br />
+              info
+            </div>
+            <div className={`${s.headerCell} ${s.getColumn}`}>Get</div>
+          </div>
+          <div className={s.tableBody}>
+            {displayedOffers.map(offer => (
+              <BonusTableRow
+                key={offer.id}
+                offer={offer}
+                isExpanded={expandedIds.has(offer.id)}
+                onToggle={() => handleToggleAccordion(offer.id)}
+              />
+            ))}
+          </div>
         </div>
 
         <div className={s.refreshButtonContainer}>

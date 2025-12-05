@@ -1,6 +1,7 @@
 .promotionsSection {
   background-color: var(--bg-purple-10-20);
   padding: 64px 0;
+  width: 100%;
 }
 
 .title {

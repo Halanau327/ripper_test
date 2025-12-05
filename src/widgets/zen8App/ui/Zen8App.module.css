@@ -1,6 +1,7 @@
 .zen8Section {
   background-color: var(--bg-purple-10-20);
   padding: 64px 0;
+  width: 100%;
 }
 
 .topSection {
@@ -19,6 +20,8 @@
   font-size: 40px;
   line-height: 56px;
   text-transform: uppercase;
+  margin-bottom: 24px;
+  max-width: 548px;
 }
 
 .description {
@@ -39,12 +42,16 @@
 
 .rightContent {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
+  position: relative;
+  overflow: visible;;
 }
 
 .mobileImage {
-  object-fit: contain;
+  position: absolute;
+  right: -55px;
+  top: 95px;
+  height: auto;
 }
 
 .bottomSection {
@@ -58,9 +65,10 @@
 
 .columnTitle {
   font-size: 40px;
-  line-height: 56px;
+  line-height: 100%;
+  font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .columnText {

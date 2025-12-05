@@ -1,6 +1,7 @@
 .topGamesSection {
   background-color: var(--bg-purple-10-80);
   padding: 140px 0;
+  width: 100%;
 }
 
 .title {
@@ -59,7 +60,7 @@
 .gameName {
   font-size: 28px;
   color: var(--bg-button-yellow);
-  font-family: var(--font-roboto), sans-serif;
+  font-family: var(--font-roboto, 'Roboto'), sans-serif;
   text-transform: capitalize;
   text-align: center;
   padding: 0 16px;

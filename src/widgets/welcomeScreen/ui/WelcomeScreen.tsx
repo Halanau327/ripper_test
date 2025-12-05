@@ -27,13 +27,6 @@ export const WelcomeScreen = ({ offerId, welcome_bonus }: Props) => {
         </div>
         <div className={s.rightContainer}></div>
       </Container>
-      <div className={s.bottomBanner}>
-        <Container>
-          <div className={s.mainTitleContainer}>
-            <h1 className={s.mainTitle}>Cowboys Online – Casino & Sports Betting in One Place</h1>
-          </div>
-        </Container>
-      </div>
     </section>
   )
 }

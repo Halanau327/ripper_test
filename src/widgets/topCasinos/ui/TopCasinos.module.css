@@ -1,17 +1,18 @@
 .topCasinosSection {
   background-color: var(--bg-purple-10-80);
+  width: 100%;
 }
 
 .topCasinosTitle {
   font-size: 56px;
-  line-height: 78px;
   text-transform: uppercase;
 }
 
 .topCasinosGridContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, 260px);
+  row-gap: 24px;
+  column-gap: 26px;
   margin-top: 48px;
 }
 
@@ -34,3 +35,52 @@
 .allCasinoButtonHidden {
   display: none;
 }
+
+@media (max-width: 1200px) {
+  .topCasinosSection {
+    padding: 24px 40px;
+  }
+
+  .topCasinosGridContainer {
+    grid-template-columns: repeat(3, 260px);
+    justify-content: center;
+    row-gap: 16px;
+    column-gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  .topCasinosGridContainer {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+
+@media (max-width: 600px) {
+  .topCasinosGridContainer {
+    grid-template-columns: repeat(2, 240px);
+  }
+
+  .topCasinosTitle {
+    font-size: 32px;
+    max-width: 300px;
+  }
+
+  .allCasinoButtonContainer {
+    margin-top: 40px;
+  }
+
+  .allCasinoButton {
+    font-size: 24px;
+    width: 280px;
+    height: 77px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .topCasinosGridContainer {
+    grid-template-columns: repeat(1, 240px);
+  }
+}
+

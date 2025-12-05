@@ -1,11 +1,11 @@
 .faqSection {
   background-color: var(--bg-purple-10-80);
   padding: 140px 0;
+  width: 100%;
 }
 
 .title {
-  font-size: 40px;
-  line-height: 56px;
+  font-size: 56px;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
@@ -40,26 +40,24 @@
 }
 
 .icon {
-  font-size: 32px;
-  color: var(--bg-button-blue);
   width: 24px;
-  height: 24px;
+  min-height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.6s;
+  flex-shrink: 0;
+  margin-right: 14px;
 }
 
 .questionText {
-  font-family: var(--font-paytone-one), sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+  font-family: var(--font-paytone-one, 'Paytone One'), sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
 .faqAnswer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.6s ease;
 }
 
 .faqAnswerExpanded {

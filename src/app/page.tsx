@@ -15,6 +15,7 @@ import { GamesAvailable } from '@/widgets/gamesAvailable/ui'
 import { Support } from '@/widgets/support/ui'
 import { Promotions } from '@/widgets/promotions/ui'
 import { Footer } from '@/widgets/footer/ui'
+import { MainH1Section } from '@/widgets/mainH1Section/mainH1Section'
 
 export default async function Home() {
   const offersData = await fetchWebsiteData(SITE_ID)
@@ -24,12 +25,12 @@ export default async function Home() {
   const gamesData = await fetchGamesData('gambling')
 
   return (
-    <div className={s.page}>
+    <>
       <Header offerId={offer?.id} />
 
       <main className={s.main}>
         {offer && <WelcomeScreen offerId={offer.id} welcome_bonus={offer.bonuses.welcome_bonus} />}
-
+        <MainH1Section />
         <TopCasinos country_name={website?.country_name} fullData={offersData} />
         <BonusDetails offers={offersData?.offers || []} />
         <DallasCowboyCasino />
@@ -44,6 +45,6 @@ export default async function Home() {
       </main>
 
       <Footer />
-    </div>
+    </>
   )
 }
